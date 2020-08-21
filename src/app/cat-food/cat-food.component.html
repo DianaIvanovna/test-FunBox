@@ -1,0 +1,13 @@
+
+<div class="card__background card__background_default" #backgroundCard>
+  <div class="card__unavailable" #unavailableCard></div> <!-- если корм закончился, добавить card__unavailable_active -->
+  <div class="card" (click)="buyFood()" >
+    <p class="card__apptitle">{{card.apptitle}}</p>
+    <h2 class="card__title">{{card.title}}</h2>
+    <p class="card__downtitle">{{card.downtitle}}</p>
+    <p class="card__description">{{card.description}}</p>
+    <img src="../../assets/images/cat.png" alt="" class="card__img">
+    <div class="card__weight card__weight_default" #weightCard>{{card.weight}}<p class="card__unit">кг</p></div>
+  </div>
+</div>
+<div class="card__footer" #footerCard>Чего сидишь? Порадуй котэ, <span class="card__buy" (click)="buyFood()">купи</span>.</div>

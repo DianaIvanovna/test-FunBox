@@ -2,7 +2,9 @@
   box-sizing: border-box;
   background-image: url("../assets/images/pattern.png");
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-top: 45px;
   padding-bottom: 65px;
 }
@@ -11,4 +13,9 @@
   font-size: 36px;
   color: white;
   padding-bottom: 30px;
+}
+.cards{
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0px 80px;
 }
