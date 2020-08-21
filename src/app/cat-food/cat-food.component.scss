@@ -1,5 +1,7 @@
 $Default-color:#1698d9; // страндартный цвет
+$DefaultHover-color:#2ea8e6; // страндартный цвет c наведением мыши
 $Selected-color: #d91667; // цвет выбранного корма
+$SelectedHover-color: #e62e7a; // цвет выбранного корма c наведением мыши
 $Disabled-color: grey; // цвет законченного корма
 
 .card{
@@ -30,9 +32,15 @@ $Disabled-color: grey; // цвет законченного корма
 }
 .card__background_default{ // стандартный фон
   background:linear-gradient(135deg, transparent 20px, $Default-color 0); // угол поворота 135 от празрачного к белому
+  &:hover{
+    background:linear-gradient(135deg, transparent 20px, $DefaultHover-color 0); // угол поворота 135 от празрачного к белому
+  }
 }
 .card__background_selected{ // фон выбранного корма
   background:linear-gradient(135deg, transparent 20px, $Selected-color 0); // угол поворота 135 от празрачного к белому
+  &:hover{
+    background:linear-gradient(135deg, transparent 20px, $SelectedHover-color 0); // угол поворота 135 от празрачного к белому
+  }
 }
 .card__background_disabled{ // фон законченного корма
   background:linear-gradient(135deg, transparent 20px, $Disabled-color 0); // угол поворота 135 от празрачного к белому
@@ -97,9 +105,15 @@ $Disabled-color: grey; // цвет законченного корма
 
 .card__weight_default{ // стандартный фон
   background-color: $Default-color;
+  &:hover{
+    background-color: $DefaultHover-color;
+  }
 }
 .card__weight_selected{ // фон выбранного корма
   background-color: $Selected-color;
+  &:hover{
+    background-color: $SelectedHover-color;
+  }
 }
 .card__weight_disabled{ // фон законченного корма
   background-color: $Disabled-color;

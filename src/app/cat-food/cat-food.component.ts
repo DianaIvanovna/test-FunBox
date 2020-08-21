@@ -51,5 +51,13 @@ export class CatFoodComponent implements OnInit {
     }
     this.inBasket = !this.inBasket;
   }
+  coverCard(){
+    console.log("!");
+    this.unavailableCard.nativeElement.classList.add('card__unavailable_active');
+  }
+  uncoverCard(){
+    console.log("1");
+    this.unavailableCard.nativeElement.classList.remove('card__unavailable_active');
+  }
 
 }
