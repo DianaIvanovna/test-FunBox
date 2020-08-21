@@ -13,9 +13,14 @@
   font-size: 36px;
   color: white;
   padding-bottom: 30px;
+  text-align: center;
 }
 .cards{
-  display:flex;
-  flex-wrap: wrap;
+  width: calc(100% - 80px);
+  display: grid;
   margin: 0px 80px;
+  grid-template-columns: repeat(auto-fill, 320px);
+  justify-content: space-around;
+  grid-row-gap: 10px;
+  grid-column-gap: auto;
 }
